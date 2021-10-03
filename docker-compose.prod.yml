@@ -1,0 +1,30 @@
+version: "3.9"
+   
+services: 
+  django:
+    env_file:
+      - .env
+    image: "${DJANGO_IMAGE}"
+    restart: always
+    volumes:
+      - static:/app/mobileotp/static
+      - media:/app/mobileotp/media
+    expose:
+      - 8000
+
+  nginx:
+    image: "${NGINX_IMAGE}"
+    restart: always
+      
+    volumes:
+      - static:/static
+      - media:/media
+    ports:
+      - "80:80"
+    depends_on:
+      - django
+
+volumes:
+  static:
+  postgres_data:
+  media:
