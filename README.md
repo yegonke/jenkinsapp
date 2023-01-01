@@ -1,3 +1,3 @@
 # jenkinsapp
 
-A simple app to demonstrate the Jenkins CICD pipeline
+A simple app to showcase the Jenkins CICD pipeline
