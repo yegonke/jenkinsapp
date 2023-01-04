@@ -91,13 +91,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-
+    #   Postgres setup
     #  'default': {
     #     'ENGINE': 'django.contrib.gis.db.backends.postgis',
-    #     'NAME': 'ziddi',
-    #     'USER': 'yegon',
-    #     'PASSWORD': '@sysYeg98',
-    #     'HOST': 'db',
+    #     'NAME': 'db-name',
+    #     'USER': 'my-username',
+    #     'PASSWORD': 'my-password',
+    #     'HOST': 'db', name of docker image
     #     'PORT': '5432',
     #     'CONN_MAX_AGE': 500
     # }
