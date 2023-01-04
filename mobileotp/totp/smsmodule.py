@@ -4,8 +4,8 @@ import json
 class SMS:
 	def __init__(self):
 		# Set your app credentials
-		self.username = "yegonke"
-		self.api_key = "67f0ca71b68b514114ea1500c97025c052d2c26b8bc95320a526d6acda06b616"
+		self.username = "africastalking username"
+		self.api_key = "africastalking api-key"
 
 		# Initialize the SDK
 		africastalking.initialize(self.username, self.api_key)
